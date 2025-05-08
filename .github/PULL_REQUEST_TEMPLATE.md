@@ -9,12 +9,12 @@
 
 A visual demonstration is strongly recommended, for both the original and new change **(video / image - any one)**.
 
-#### Video Demo (if applicable):
+#### Video Demo (if applicable)
 
 - Show screen recordings of the issue or feature.
 - Demonstrate how to reproduce the issue, the behavior before and after the change.
 
-#### Image Demo (if applicable):
+#### Image Demo (if applicable)
 
 - Add side-by-side screenshots of the original and updated change.
 - Highlight any significant change(s).

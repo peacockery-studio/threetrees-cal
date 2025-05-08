@@ -13,7 +13,7 @@
 
 #### Obtaining Revert API keys
 
-- Create an account on Revert if you don't already have one. (https://app.revert.dev/sign-up)
-- Login to your revert dashboard (https://app.revert.dev/sign-in) and click on `Customize your apps` - `Pipedrive`
+- Create an account on Revert if you don't already have one. (<https://app.revert.dev/sign-up>)
+- Login to your revert dashboard (<https://app.revert.dev/sign-in>) and click on `Customize your apps` - `Pipedrive`
 - Enter the `client_id` and `client_secret` you copied in the previous step
 - Enter the `client_id` and `client_secret` previously copied to `Settings > Admin > Apps > CRM > Pipedrive` by clicking the `Edit` button on the app settings.

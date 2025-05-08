@@ -2,8 +2,6 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://github.com/user-attachments/assets/ce7c2ecf-6097-469a-8512-c846a9fb665d" height="200" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     <p align="center">
@@ -29,13 +27,13 @@ Cal.com is using the [Nest](https://github.com/nestjs/nest) framework TypeScript
 ## Installation
 
 ```bash
-$ yarn install
+yarn install
 ```
 
 ## Prisma setup
 
 ```bash
-$ yarn prisma generate
+yarn prisma generate
 ```
 
 ## Env setup
@@ -57,32 +55,35 @@ CALCOM_LICENSE_KEY=c4234812-12ab-42s6-a1e3-55bedd4a5bb
 # Development
 
 ```bash
-$ yarn run start
+yarn run start
 ```
 
 OR if you don't want to use docker, you can run following command.
 
 ```bash
-$ yarn dev:no-docker
+yarn dev:no-docker
 ```
 
 Additionally you can run following command(in different terminal) to ensure that any change in any of the dependencies is rebuilt and detected. It watches platform-libraries, platform-constants, platform-enums, platform-utils, platform-types.
 
 ```bash
-$ yarn run dev:build:watch
+yarn run dev:build:watch
 ```
 
 If you are making changes in packages/platform/libraries, you should run the following command too that would connect your local packages/platform/libraries to the api/v2
 
 ```bash
-$ yarn local
+yarn local
 ```
 
 # watch mode
+
 $ yarn run start:dev
 
 # production mode
+
 $ yarn run start:prod
+
 ```
 
 
@@ -110,6 +111,7 @@ $ yarn run test:cov
 ## Conventions
 
 ### Guards
+
 1. In case a guard would return "false" for "canActivate" instead throw ForbiddenException with an error message containing guard name and the error.
 2. In case a guard would return "false" for "canActivate" DO NOT cache the result in redis, because we don't want that someone is forbidden, updates whatever was the problem, and then has to wait for cache to expire. We only cache in redis guard results where "canAccess" is "true".
 3. If you use ApiAuthGuard but want that only specific auth method is allowed, for example, api key, then you also need to add `@ApiAuthGuardOnlyAllow(["API_KEY"])` under the `@UseGuards(ApiAuthGuard)`. Shortly, use `ApiAuthGuardOnlyAllow` to specify which auth methods are allowed by `ApiAuthGuard`. If `ApiAuthGuardOnlyAllow` is not used or nothing is passed to it or empty array it means that

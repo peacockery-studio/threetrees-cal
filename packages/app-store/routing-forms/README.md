@@ -1,14 +1,15 @@
 # Routing Forms App
 
 ## Vocabulary
-- RaqbField refers to the field in the context of React Awesome Query Builder(RAQB)
-    - See `getQueryBuilderConfig`
-- Field refers to the field in the Routing Form
 
+- RaqbField refers to the field in the context of React Awesome Query Builder(RAQB)
+  - See `getQueryBuilderConfig`
+- Field refers to the field in the Routing Form
 
 ## Understanding the structure of queryValue(type JsonTree)
 
 ### AttributeQueryValue
+
 - {
     id: "Some-id-generated-and-used-internally-by-raqb"
     type: "group",
@@ -20,11 +21,11 @@
                 operator: "multiselect_equals", // One of many operators possible
                 value: ["AttributeOption.id"],
                 // This is the type of the attribute and the operator corresponds to it. The data provided to jsonLogic on which the logic(generated from RAQB config and this queryValue) is applied must also be as per the requirement of the operator.
-                valueType: ["multiselect"] 
+                valueType: ["multiselect"]
             }
         }
     }
-    
+
 }
 
 ## How to run Tests

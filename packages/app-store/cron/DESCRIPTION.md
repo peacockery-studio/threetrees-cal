@@ -6,7 +6,7 @@ items:
   - 4.png
 ---
 
-### It’s time.
+### It’s time
 
 All of your commitments, now in one place. Meet the beautifully designed, fully integrated calendar for your work and life.
 
